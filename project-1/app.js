@@ -6,9 +6,9 @@ require("dotenv").config();
 app.use(express.static("./public"));
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("hii rishika");
-});
+// app.get("/", (req, res) => {
+//   res.send("hii rishika");
+// });
 
 app.use("/api/v1/tasks", tasks);
 
